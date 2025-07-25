@@ -1,20 +1,16 @@
 import com.example.Animal;
 import com.example.Feline;
 import org.junit.jupiter.api.Test;
-
-
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 public class FelineTest {
     Feline feline = new Feline();
 
     @Test
-    public void felineGetFamilyPositiveTest() {
+    public void felineGetFamilyPositive() {
         String expected = "Кошачьи";
         Feline feline = new Feline();
         String actual = feline.getFamily();
-        System.out.println(actual);
         assertEquals(expected, actual);
     }
 
